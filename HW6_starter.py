@@ -249,6 +249,12 @@ class TestHomework6(unittest.TestCase):
         test_frozen = get_movie_rating('Frozen 2', 'cache.json')
         self.assertEqual(test_frozen, 'No rating found')
 
+    # UNCOMMENT TO TEST EXTRA CREDIT
+    '''
+    def test_get_api_key(self):                     
+        hidden_key = get_api_key('api_key.txt')
+        self.assertEqual(API_KEY, hidden_key)
+    '''
     
 
     
