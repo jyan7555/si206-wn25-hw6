@@ -233,6 +233,13 @@ class TestHomework6(unittest.TestCase):
         self.assertEqual(test_2, "'NonexistentMovie' is not in the cache.")
 
 
+    # UNCOMMENT TO TEST EXTRA CREDIT
+    '''
+    
+    def test_get_api_key(self):                     
+        hidden_key = get_api_key('api_key.txt')
+        self.assertEqual(API_KEY, hidden_key)
+
     def test_get_movie_rating(self):
         # Updated test cases to match the actual data
         test_titanic = get_movie_rating('Titanic', 'cache.json')
@@ -249,11 +256,6 @@ class TestHomework6(unittest.TestCase):
         test_frozen = get_movie_rating('Frozen 2', 'cache.json')
         self.assertEqual(test_frozen, 'No rating found')
 
-    # UNCOMMENT TO TEST EXTRA CREDIT
-    '''
-    def test_get_api_key(self):                     
-        hidden_key = get_api_key('api_key.txt')
-        self.assertEqual(API_KEY, hidden_key)
     '''
     
 
